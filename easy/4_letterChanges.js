@@ -1,6 +1,7 @@
+// Have the function LetterChanges(str) take the str parameter being passed and modify it using the following algorithm. Replace every letter in the string with the letter following it in the alphabet (ie. c becomes d, z becomes a). Then capitalize every vowel in this new string (a, e, i, o, u) and finally return this modified string.
+
+
 //solving using regex and unicode
-
-
 function LetterChanges(str){
   return str.replace(/[a-z]/gi, function(x){
     var next = String.fromCharCode(x.charCodeAt() + 1);
@@ -14,8 +15,6 @@ function LetterChanges(str){
 console.log(LetterChanges('Argument Goes here'))
 
 //solving using alphabet array
-
-
 // function LetterChanges(str) {
 //   var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 //   var vowels = ['a', 'e', 'i', 'o', 'u']
